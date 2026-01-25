@@ -1,10 +1,11 @@
 {
   "nav": {
     "github": "GitHub",
-    "discord": "Discord"
+    "discord": "Discord",
+    "bandmix": "Bandmix"
   },
   "about": {
     "title": "About us",
-    "description": "We are a coverband from bavaria since 2025, that mostly plays rock. We have a drummer, lead- and rythm guitar player and bass player. We are eventually looking for a singer."
+    "description": "We are a coverband from bavaria since 2025, that mostly plays rock. We have a drummer, lead- and rythm guitar player and bass player. We are eventually looking for a singer. \n If interested, you can join our Discord server"
   }
 }
