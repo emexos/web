@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>emexOS [main page]</title>
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <script defer src="backend/info.js"></script>
+    </head>
+    <body
+        class="parallaxTop"
+        style="background-image: url(images/homeScreenBlurred.jpg)"
+    >
+        <div class="title">
+            <p class="downloadNow"><strong>Download emexOS</strong></p>
+        </div>
+
+        <div class="div1">
+            <div class="about1" style="text-align: center">
+                <div class="aboutSubtitle">Choose Your Version</div>
+
+                <table
+                    class="downloadTable"
+                    style="
+                        width: 100%;
+                        border-collapse: collapse;
+                        text-align: left;
+                    "
+                >
+                    <thead>
+                        <tr style="background-color: #f2f2f2">
+                            <th
+                                style="
+                                    padding: 10px;
+                                    border-bottom: 2px solid #000;
+                                "
+                            >
+                                Version
+                            </th>
+                            <th
+                                style="
+                                    padding: 10px;
+                                    border-bottom: 2px solid #000;
+                                "
+                            ></th>
+                            <th
+                                style="
+                                    padding: 10px;
+                                    border-bottom: 2px solid #000;
+                                "
+                            >
+                                Download
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <!-- bfeid vo backend/info.js -->
+                    <tbody id="releaseTable">
+                        <tr>
+                            <td colspan="3" style="padding: 10px">
+                                pls wait a second or minute or hour....
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- damn i hate comments in html... -->
+        </div>
+
+        <div class="footer"><p></p></div>
+    </body>
+</html>
