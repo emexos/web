@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body {
+    font-family: "Newsreader", sans-serif;
+    /* background-color: #f5f5f5;*/
+    background-color: #ffffff;
+    line-height: 1.6;
+    color: #111;
+}
+
+.parallaxTop {
+    min-height: 5px;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button {
+    width: 200px;
+    height: 70px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.subtitle {
+    color: rgb(255, 255, 255);
+    margin-bottom: 150px;
+    font-family: "Newsreader", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/*.title {
+    font-family: "Newsreader", sans-serif;
+}*/
+.aboutSubtitle {
+    color: #000000;
+    font-size: 50px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.about1 {
+    background-color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 70px;
+    padding: 80px;
+}
+
+.about2 {
+    background-color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    padding: 80px;
+}
+
+/*.aboutBlack {
+    background-color: rgb(30, 30, 30);
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    padding: 80px;
+    color: white;
+}*/
+
+.downloadDIV {
+    background-color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    padding: 80px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.downloadNow {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.downloadButton {
+    width: 250px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 5px solid #000000;
+    align-self: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    transition:
+        background-color 0.2s,
+        color 0.2s,
+        transform 0.1s;
+}
+
+.downloadButton:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    transform: translateY(-2px);
+}
+
+.placeholder {
+    padding: 5px;
+}
+
+.placeholder2 {
+    padding: 15px;
+}
+
+/*.backButton {*/
+/*position: absolute;*/
+/*
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.backButton:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.backButton i {
+    margin-right: 8px;
+}*/
+
+.ibackButton {
+    /*position: absolute;*/
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 14px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition:
+        background-color 0.3s,
+        transform 0.1s;
+    font-family: "Roboto", sans-serif; /* dschrüft voändern */
+}
+
+.ibackButton:hover {
+    background-color: rgb(0, 0, 0);
+    transform: translateY(-1px);
+}
+
+.ibackButton i {
+    margin-right: 8px;
+}
+
+/*.faq-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.faq-question {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-bottom: 2px solid #000;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    }*/
+
+/*.faq-answer {
+    padding: 10px;
+    display: none;
+    border-bottom: 1px solid #ddd;
+}*/
