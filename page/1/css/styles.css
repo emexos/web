@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #0f0f0f;
+    color: #eaeaea;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 48px;
+    background: rgba(15, 15, 15, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.logo img {
+    width: 32px;
+    height: 32px;
+}
+
+.nav {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #eaeaea;
+    transition: background 0.2s ease;
+}
+
+.nav-button img {
+    width: 16px;
+    height: 16px;
+}
+
+.nav-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.lang-switcher {
+    display: flex;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lang-button {
+    padding: 4px 12px;
+    border-radius: 999px;
+    border: none;
+    background: transparent;
+    color: #eaeaea;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.lang-button.active {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.lang-button:hover:not(.active) {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.banner {
+    height: 400px;
+    background-image: url("../images/banner.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 48px;
+}
+
+.about-container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-content {
+    flex: 1;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 52px;
+    font-family: "Newsreader", serif;
+    margin-bottom: 24px;
+}
+
+.about-content p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}

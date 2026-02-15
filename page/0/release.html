@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>emexOS Releases</title>
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/release.css" />
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/dompurify@2.4.0/dist/purify.min.js"></script>
+
+        <script defer src="backend/release.js"></script>
+    </head>
+
+    <body
+        class="parallaxTop"
+        style="background-image: url(images/homeScreenBlurred.jpg)"
+    >
+        <div style="padding: 40px; max-width: 1200px; margin: 0 auto">
+            <a class="ibackButton" href="index.html">&larr; Back</a>
+
+            <div class="about1" style="margin-top: 20px">
+                <h1 id="releaseTitle" class="aboutSubtitle">Loading...</h1>
+                <div
+                    id="releaseMeta"
+                    style="margin-bottom: 16px; color: #666; font-size: 14px"
+                ></div>
+                <div id="releaseContent" style="padding-top: 10px"></div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+#releaseContent {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #111;
+}
+
+#releaseContent h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#releaseContent h2 {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#releaseContent h3 {
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+#releaseContent p {
+    margin-bottom: 16px;
+}
+
+#releaseContent ul {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+#releaseContent li {
+    margin-bottom: 8px;
+}
+
+#releaseContent a {
+    color: #000;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+#releaseContent a:hover {
+    text-decoration: none;
+}
+
+#releaseContent code {
+    background: #f2f2f2;
+    padding: 4px 6px;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+#releaseContent pre {
+    background: #f2f2f2;
+    padding: 20px;
+    overflow-x: auto;
+    font-size: 16px;
+}
+
+#releaseContent img {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+}

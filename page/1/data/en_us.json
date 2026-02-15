@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "github": "GitHub",
+    "discord": "Discord",
+    "bandmix": "Bandmix"
+  },
+  "about": {
+    "title": "About us",
+    "description": "We are a coverband from bavaria since 2025, that mostly plays rock. We have a drummer, lead- and rythm guitar player and bass player. We are eventually looking for a lead guitar player. If interested, you can join our Discord server",
+
+    "guitar_description": "Esp Ltd ex 400 (with emg pickups) :"
+  }
+}

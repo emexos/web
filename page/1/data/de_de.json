@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "github": "GitHub",
+    "discord": "Discord",
+    "bandmix": "Bandmix"
+  },
+  "about": {
+    "title": "Über uns",
+    "description": "Wir sind eine Coverband aus Bayern seit 2025, die hauptsächlich Rock spielt. Wir haben einen Schlagzeuger, lead- und rythm Gitarrist und Bassist und suchen eventuell noch nach einen lead gitarristen. \n Bei Interesse gerne in unseren Discord Server melden",
+
+    "guitar_description": "Esp Ltd ex 400 (mit emg pickups) :"
+  }
+}
