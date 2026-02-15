@@ -54,14 +54,38 @@ function loadReadme(branch) {
 }
 
 function renderMarkdown(md, branch) {
-  /// relative image
-  const fixedMd = md.replace(
+  console.log("Original markdown:", md.substring(0, 500)); // Debug log
+
+  /// Fix relative image paths - improved regex to handle more cases
+  let fixedMd = md;
+
+  // Handle images with paths starting with ./ or just filename
+  fixedMd = fixedMd.replace(
     /!\[([^\]]*)\]\((?!https?:\/\/)([^)]+)\)/g,
-    (_, alt, path) => {
-      const clean = path.replace(/^\.?\//, "");
-      return `![${alt}](https://raw.githubusercontent.com/${REPO}/${branch}/${clean})`;
+    (match, alt, path) => {
+      console.log("Found image:", path); // Debug log
+
+      // Remove leading ./ or /
+      const clean = path.replace(/^\.?\//, "").trim();
+      const fullUrl = `https://raw.githubusercontent.com/${REPO}/${branch}/${clean}`;
+
+      console.log("Converted to:", fullUrl); // Debug log
+
+      return `![${alt}](${fullUrl})`;
     },
   );
+
+  // Also handle HTML img tags if present
+  fixedMd = fixedMd.replace(
+    /<img\s+([^>]*?)src=["'](?!https?:\/\/)([^"']+)["']([^>]*?)>/gi,
+    (match, before, path, after) => {
+      const clean = path.replace(/^\.?\//, "").trim();
+      const fullUrl = `https://raw.githubusercontent.com/${REPO}/${branch}/${clean}`;
+      return `<img ${before}src="${fullUrl}"${after}>`;
+    },
+  );
+
+  console.log("Fixed markdown:", fixedMd.substring(0, 500)); // Debug log
 
   const html = marked.parse(fixedMd);
   const safe = DOMPurify.sanitize(html);
@@ -72,5 +96,20 @@ function renderMarkdown(md, branch) {
   contentEl.querySelectorAll("a").forEach((a) => {
     a.target = "_blank";
     a.rel = "noopener";
+  });
+
+  // add error handling for images
+  contentEl.querySelectorAll("img").forEach((img) => {
+    img.addEventListener("error", function () {
+      console.error("Failed to load image:", this.src);
+      this.alt = `[Image failed to load: ${this.alt || "Screenshot"}]`;
+      this.style.border = "2px dashed #ccc";
+      this.style.padding = "20px";
+      this.style.background = "#f5f5f5";
+    });
+
+    img.addEventListener("load", function () {
+      console.log("Successfully loaded image:", this.src);
+    });
   });
 }

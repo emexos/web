@@ -52,6 +52,7 @@ fetch(API_URL)
     ${
       iso
         ? `<a class="button downloadButton" href="${iso.browser_download_url}">
+      <img src="../gen/icons/light/database.svg" alt="" style="width: 20px; height: 20px; display: inline-block; vertical-align: middle; margin-right: 6px; filter: invert(1);">
       Download ISO
     </a>`
         : `<span class="placeholder">
@@ -59,6 +60,7 @@ fetch(API_URL)
     </span>`
     }
     <a class="button downloadButton" style="margin-left:8px" href="release.html?tag=${encodeURIComponent(release.tag_name)}">
+      <img src="../gen/icons/light/arrow-right.svg" alt="" style="width: 20px; height: 20px; display: inline-block; vertical-align: middle; margin-right: 6px; filter: invert(1);">
       Read more
     </a>
 </td>
