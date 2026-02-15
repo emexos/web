@@ -33,11 +33,26 @@
     .about1,
     .about2,
     .tech-details {
-        padding: 40px 20px;
+        padding: 40px 20px !important;
     }
 
     .command-grid {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    .downloadTableWrap {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .downloadTable {
+        min-width: 680px;
+    }
+
+    .downloadButton {
+        min-width: 120px;
+        font-size: 14px;
+        padding: 10px 14px;
     }
 }
 

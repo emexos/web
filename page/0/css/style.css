@@ -4,6 +4,48 @@
 @import url("s.css");
 @import url("media.css");
 
+:root {
+    --color-bg: #ffffff;
+    --color-bg-soft: #fafafa;
+    --color-bg-muted: #f2f2f2;
+    --color-bg-highlight: #f0f0f0;
+    --color-text: #111111;
+    --color-text-strong: #000000;
+    --color-text-secondary: #333333;
+    --color-text-muted: #555555;
+    --color-text-subtle: #666666;
+    --color-text-placeholder: #999999;
+    --color-text-inverse: #ffffff;
+    --color-border-strong: #000000;
+    --color-border: #dcdcdc;
+    --color-border-soft: #e0e0e0;
+    --color-border-muted: #dddddd;
+    --color-surface-dark: #000000;
+    --shadow-hard: 8px 8px 0px var(--color-border-strong);
+    --font-base: "Newsreader", sans-serif;
+    --font-accent: "Poppins", sans-serif;
+    --font-ui: "Roboto", sans-serif;
+}
+
+:root[data-theme="dark"] {
+    --color-bg: #0f1115;
+    --color-bg-soft: #171a21;
+    --color-bg-muted: #1e222b;
+    --color-bg-highlight: #1b2028;
+    --color-text: #e9edf3;
+    --color-text-strong: #ffffff;
+    --color-text-secondary: #c6ced9;
+    --color-text-muted: #a7b1bf;
+    --color-text-subtle: #95a0ae;
+    --color-text-placeholder: #7f8a99;
+    --color-text-inverse: #e9edf3;
+    --color-border-strong: #c0c0c0;
+    --color-border: #2f3641;
+    --color-border-soft: #3a4350;
+    --color-border-muted: #303743;
+    --color-surface-dark: #060606;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,10 +60,10 @@
 }
 
 body {
-    font-family: "Newsreader", sans-serif;
-    background-color: #ffffff;
+    font-family: var(--font-base);
+    background-color: var(--color-bg);
     line-height: 1.55;
-    color: #111;
+    color: var(--color-text);
     font-size: 15px;
 }
 
@@ -34,8 +76,8 @@ body {
 }
 
 .subtitle-main {
-    color: #000;
-    font-family: "Poppins", sans-serif;
+    color: var(--color-text-strong);
+    font-family: var(--font-accent);
     font-size: 35px;
     text-align: center;
     font-weight: 800;
@@ -44,13 +86,13 @@ body {
 
 .tech-details {
     /*background-color: #1a1a1a;*/
-    color: #000;
+    color: var(--color-text-strong);
     padding: 60px 80px;
     margin-top: 40px;
 }
 
 .tech-details .intro-title {
-    color: #000;
+    color: var(--color-text-strong);
 }
 
 h1 {
@@ -63,7 +105,7 @@ h1::after {
     display: block;
     width: 100%;
     height: 1px;
-    background-color: #dcdcdc;
+    background-color: var(--color-border);
     margin-top: 10px;
 }
 
@@ -71,7 +113,7 @@ h1::after {
     width: 200px;
     height: 70px;
     border: none;
-    color: white;
+    color: var(--color-text-inverse);
     padding: 14px 28px;
     text-align: center;
     text-decoration: none;
@@ -84,7 +126,7 @@ h1::after {
 }
 
 .aboutSubtitle {
-    color: #000000;
+    color: var(--color-text-strong);
     font-size: 44px;
     margin-bottom: 32px;
     font-weight: 600;
@@ -92,25 +134,25 @@ h1::after {
 }
 
 .about1 {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--color-bg);
     font-size: 20px;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-accent);
     margin-top: 70px;
     padding: 80px;
     text-align: left;
 }
 
 .about2 {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--color-bg);
     font-size: 20px;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-accent);
     padding: 80px;
 }
 
 .downloadDIV {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--color-bg);
     font-size: 20px;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-accent);
     padding: 80px;
     padding-top: 20px;
 }
@@ -122,18 +164,18 @@ h1::after {
 }
 
 .downloadTable thead tr {
-    background-color: #f2f2f2;
+    background-color: var(--color-bg-muted);
 }
 
 .downloadTable th {
     padding: 10px;
-    border-bottom: 2px solid #000;
-    font-family: "Poppins", sans-serif;
+    border-bottom: 2px solid var(--color-border-strong);
+    font-family: var(--font-accent);
 }
 
 .downloadTable td {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--color-border-muted);
 }
 
 .downloadTable td:first-child {
@@ -155,10 +197,10 @@ h1::after {
     width: auto;
     min-width: 140px;
     height: auto;
-    background-color: #ffffff;
-    color: #000000;
-    border: 3px solid #000000;
-    font-family: "Poppins", sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text-strong);
+    border: 3px solid var(--color-border-strong);
+    font-family: var(--font-accent);
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
@@ -172,13 +214,13 @@ h1::after {
 }
 
 .downloadButton:hover {
-    box-shadow: 8px 8px 0px #000000;
+    box-shadow: var(--shadow-hard);
     transform: translate(-2px, -2px);
 }
 
 .placeholder {
     padding: 5px;
-    color: #999;
+    color: var(--color-text-placeholder);
     font-style: italic;
 }
 
@@ -190,19 +232,19 @@ h1::after {
     top: 20px;
     left: 20px;
     font-size: 16px;
-    color: #fff;
-    background-color: rgb(0, 0, 0);
+    color: var(--color-text-inverse);
+    background-color: var(--color-surface-dark);
     padding: 10px;
     text-decoration: none;
     display: flex;
     align-items: center;
     transition: background-color 0.3s;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-ui);
     width: fit-content;
 }
 
 .ibackButton:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--color-surface-dark);
 }
 
 .ibackButton i {
@@ -214,8 +256,8 @@ h1::after {
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 50px 20px;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--color-surface-dark);
+    color: var(--color-text-inverse);
     margin-top: 40px;
 }
 
@@ -228,13 +270,13 @@ h1::after {
 .stat-number {
     font-size: 48px;
     font-weight: 700;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-accent);
     display: block;
-    color: #fff;
+    color: var(--color-text-inverse);
 }
 
 .stat-label {
     font-size: 16px;
     margin-top: 8px;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-accent);
 }

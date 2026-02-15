@@ -118,33 +118,40 @@
 
             <!--<div class="intro-section"></div>-->
             <div class="about1" style="text-align: left">
-                <div class="aboutSubtitle">Download >emexOS<</div>
+                <div class="aboutSubtitle">Download &gt;emexOS&lt;</div>
 
-                <p style="margin-bottom: 30px; font-size: 18px; color: #555">
+                <p
+                    style="
+                        margin-bottom: 30px;
+                        font-size: 18px;
+                        color: var(--color-text-muted);
+                    "
+                >
                     select your preferred version, if you're not sure which
                     version to choose, choose the first one.
                 </p>
+                <div class="downloadTableWrap">
+                    <table class="downloadTable">
+                        <thead>
+                            <tr>
+                                <th>Version</th>
+                                <th></th>
+                                <th style="text-align: right">Download</th>
+                            </tr>
+                        </thead>
 
-                <table class="downloadTable">
-                    <thead>
-                        <tr>
-                            <th>Version</th>
-                            <th></th>
-                            <th style="text-align: right">Download</th>
-                        </tr>
-                    </thead>
-
-                    <tbody id="releaseTable">
-                        <tr>
-                            <td
-                                colspan="3"
-                                style="padding: 10px; text-align: center"
-                            >
-                                Loading releases...
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                        <tbody id="releaseTable">
+                            <tr>
+                                <td
+                                    colspan="3"
+                                    style="padding: 10px; text-align: center"
+                                >
+                                    Loading releases...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <!-- Stats Section -->
@@ -176,8 +183,9 @@
                             style="
                                 margin-top: 30px;
                                 padding: 20px;
-                                background-color: #f0f0f0;
-                                border-left: 4px solid #000;
+                                background-color: var(--color-bg-highlight);
+                                border-left: 4px solid
+                                    var(--color-border-strong);
                             "
                         >
                             <strong>requirements:</strong> a x64 compatible CPU
