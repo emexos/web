@@ -7,6 +7,12 @@
 @import url("link.css");
 @import url("cursor.css");
 
+@font-face {
+    font-family: emexpixel;
+    src: url("../fonts/emexfont.ttf");
+    /*src: url("fonts/Habbo.ttf");*/
+}
+
 :root {
     --color-bg: #ffffff;
     --color-bg-soft: #fafafa;
