@@ -61,8 +61,11 @@
 
 #releaseContent img {
     max-width: 100%;
+    width: 100%;
+    height: auto;
     display: block;
     margin: 20px auto;
+    object-fit: contain;
 }
 
 .code-copy-button {

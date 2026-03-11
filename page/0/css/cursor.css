@@ -1,6 +1,14 @@
-/* Custom inverted cursor */
 body {
     cursor: none;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    body {
+        cursor: auto;
+    }
+    .custom-cursor {
+        display: none !important;
+    }
 }
 
 .custom-cursor {
