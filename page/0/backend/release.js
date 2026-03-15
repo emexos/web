@@ -59,11 +59,11 @@ function renderMarkdown(md, branch) {
   /// relative images
   let fixedMd = md;
 
-  // Handle images with paths starting with ./ or just filename
+  // handle images with paths starting with ./ or just filename
   fixedMd = fixedMd.replace(
     /!\[([^\]]*)\]\((?!https?:\/\/)([^)]+)\)/g,
     (match, alt, path) => {
-      console.log("Found image:", path); // Debug log
+      console.log("Found image:", path);
 
       // remove leading ./ or /
       const clean = path.replace(/^\.?\//, "").trim();
