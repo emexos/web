@@ -1,0 +1,13 @@
+.about {
+    padding: 4rem 0;
+}
+
+.about p {
+    color: var(--muted);
+    max-width: 560px;
+    margin-bottom: 1rem;
+}
+
+.about p:last-of-type {
+    margin-bottom: 0;
+}

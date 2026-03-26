@@ -1,0 +1,46 @@
+main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.hero {
+    padding: 4rem 0 5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    color: var(--muted);
+    max-width: 520px;
+    margin-bottom: 1.5rem;
+}
+
+.hero-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8125rem;
+}
+
+.hero-links a {
+    color: var(--accent);
+}
+
+.hero-links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+
+.sep {
+    color: var(--border);
+    user-select: none;
+}

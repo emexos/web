@@ -1,0 +1,48 @@
+@import url('about.css');
+@import url('footer.css');
+@import url('media.css');
+@import url('nav.css');
+@import url('project.css');
+@import url('hero.css');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #ede8e1;
+    --text: #1c1917;
+    --muted: #57534e;
+    --accent: #96705a;
+    --border: #d5cfc7;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--text);
+    background-color: var(--bg);
+    border-top: 3px solid var(--accent);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    background-color: var(--accent);
+    color: var(--bg);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

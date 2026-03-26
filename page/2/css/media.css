@@ -1,0 +1,41 @@
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        padding: 1.5rem 1.25rem;
+    }
+
+    main {
+        padding: 0 1.25rem;
+    }
+
+    .hero {
+        padding: 3rem 0 3.5rem;
+    }
+
+    .hero h1 {
+        font-size: 1.625rem;
+    }
+
+    .projects,
+    .about {
+        padding: 3rem 0;
+    }
+
+    .project {
+        padding-left: 0.75rem;
+    }
+
+    .project-header {
+        flex-direction: column;
+        gap: 0.125rem;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: flex-start;
+        padding: 1.5rem 1.25rem;
+    }
+}
